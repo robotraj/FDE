@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    170deg,
+    oklch(0.965 0.028 235) 0%,
+    oklch(0.925 0.05 232) 100%
+  );
+  font-family: "DM Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+a {
+  color: oklch(0.55 0.14 245);
+}
+
+a:hover {
+  color: oklch(0.45 0.14 245);
+}
+
+button {
+  font-family: inherit;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+  background: transparent;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  border-radius: 99px;
+  background: oklch(0.89 0.04 235);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 26px;
+  height: 26px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background: oklch(0.99 0.008 235);
+  border: 2px solid oklch(0.62 0.14 245);
+  box-shadow: 0 3px 10px -4px oklch(0.4 0.08 245 / 0.7);
+  cursor: grab;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 10px;
+  border-radius: 99px;
+  background: oklch(0.89 0.04 235);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: oklch(0.99 0.008 235);
+  border: 2px solid oklch(0.62 0.14 245);
+  box-shadow: 0 3px 10px -4px oklch(0.4 0.08 245 / 0.7);
+  cursor: grab;
+}
+
+@keyframes ffIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ffPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  60% {
+    transform: scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ffCoin {
+  0% {
+    opacity: 0;
+    transform: translateY(16px) scale(0.6);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(-34px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-210px) scale(0.5);
+  }
+}
+
+@keyframes ffRipple {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes ffFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes ffDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(14px, -18px, 0);
+  }
+}
+
+@keyframes ffFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
