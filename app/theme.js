@@ -1,0 +1,18 @@
+export const colors = {
+  cream: "#FBF3E3",
+  creamDeep: "#F3E7CC",
+  card: "#FFFDF7",
+  cardBorder: "#EAE0C6",
+  ink: "#1F3D2B",
+  inkSoft: "#3F4A3C",
+  body: "#544C3C",
+  muted: "#8B8168",
+  green: "#3F7C2A",
+  greenDeep: "#1F3D2B",
+  greenBright: "#5FA23F",
+  gold: "#D9A441",
+  goldLight: "#F2C868",
+  terracotta: "#D97A46",
+  terracottaDeep: "#B85E31",
+  pink: "#E8628F",
+};
